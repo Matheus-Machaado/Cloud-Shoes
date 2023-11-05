@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="item.css">
+    <link rel="shortcut icon" href="img/FiveIcon.png" type="image/x-icon">
+</head>
+
+<body onresize="mudouTamanho()">
+    <main>
+        <header>
+            <div class="parte" id="first">
+                <div class="logo"><a href="cloud.html#top"><i class='bx bx-cloud-lightning'></i></a></div>
+                <div class="open" id="menu" onclick="openMenu()"><i class='bx bxs-user-detail'></i></div>
+                <nav>
+                    <ul>
+                        <li><a href="cloud.html#wave02">Produtos</a></li>
+                        <li><a href="cloud.html#wave01">Facilidades</a></li>
+                        <li><a href="cloud.html#sobre">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="parte" id="second">
+                <div class="icons">
+                    <a href=""><i class='bx bxs-user'></i></a>
+                    <a href="cart.html"><i class='bx bxs-cart-alt'></i></a>
+                </div>
+            </div>
+        </header>
+        <div id="navbarlateral">
+            <div id="fecha" onclick="fecharMenu()"><i class='bx bx-menu-alt-right'></i></div>
+            <ul>
+                <li class="item-menu ativo"><a href="#">Início</a></li>
+                <li class="item-menu"><a href="#wave02">Produtos</a></li>
+                <li class="item-menu"><a href="#wave01">Facilidades</a></li>
+                <li class="item-menu"><a href="#sobre">Sobre</a></li>
+                <div class="flexbox">
+                    <li class="item-menu" id="flexitem"><a href=""><i class='bx bxs-user'></i>Usuario</a></li>
+                    <li class="item-menu" id="flexitem"><a href="cart.html"><i class='bx bxs-cart-alt'></i>Carrinho</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="main-conteudo">
+            <div class="main01">
+                <div class="produto-img">
+                    <img src="img/nike1-4.png" alt="">
+                </div>
+            </div>
+            <div class="main02">
+                <div class="descricao">
+                    <h3>NIKE</h3>
+                    <h1>NIKE AIR MAX 2021 SE</h1>
+                    <p>Feita Com Pelo Menos 20% De Materiais Reciclados Por Peso, A Parte De Cima Inclui Uma Tela Estruturada, Tecido Woven E Camadas Sem Costura Para Um Estilo Elegante, Durável, Leve E Arejado. A Entressola De Espuma Tem Bolhas De Ar (Como Um Favo De Mel) E É Dividida Em Duas Seções Para Um Amortecimento Leve Que Dura.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="descricao price">
+                    <h1>R$799,99</h1>
+                    <p>Frete Grátis</p>
+                    <div class="line"></div>
+                </div>
+                <form action="">
+                    <div class="tamanho-container">
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="38">
+                            <div class="tamanho">38</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="39">
+                            <div class="tamanho">39</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="40">
+                            <div class="tamanho">40</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="41">
+                            <div class="tamanho">41</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="42">
+                            <div class="tamanho">42</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="43">
+                            <div class="tamanho">43</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="44">
+                            <div class="tamanho">44</div>
+                        </label>
+                        <label class="tamanho-opcao">
+                            <input type="radio" name="radio" class="check" id="45">
+                            <div class="tamanho">45</div>
+                        </label>
+                    </div>
+                    <div class="qtn-add">
+                        <input type="number" name="qtn" id="iqtn" value="1">
+                        <button class="enviar">ADD AO CARRINHO</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="cloud.js"></script>
+</body>
+
+</html>

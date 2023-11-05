@@ -1,0 +1,616 @@
+@charset "UTF-8";
+@import url('https//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --colo1: #cfe1ef;
+    --colo2: #6371F2;
+    --colo3: #747474;
+    --colo4: #AAABAC;
+    --colo5: #E8E8E8;
+    --black: #333333;
+    background-image: linear-gradient(to right #717DED,#9BA1E0,#9EA5DF);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2 {
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+}
+
+section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    padding: 2rem 5%;
+    background-color: var(--colo1);
+    z-index: 1;
+}
+
+.logo i {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+nav ul {
+    display: flex;
+    gap: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--black);
+    transition: .2s ease-in-out;
+}
+
+nav ul li a:hover, .icons a:hover {
+    color: var(--colo4);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icons a {
+    font-size: 2rem;
+    color: var(--black);
+    transition: .2s ease-in-out;
+}
+
+.icons a:hover{
+    transform: scale(1.4);
+}
+
+.open {
+    display: none;
+}
+
+.open i {
+    font-size: 3.3rem;
+    color: var(--black); 
+}
+
+#navbarlateral {
+    display: none;
+}
+
+.inicio {
+    justify-content: space-between;
+    background-color: var(--colo1);
+    min-height: 100vh;
+}
+
+.inicio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 50vw;
+    gap: 1rem;
+}
+
+.inicio-content h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.inicio-content p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--colo3);
+    text-align: justify;
+}
+
+.buton {
+    margin-top: 3rem;
+}
+
+.buton a {
+    color: white;
+    background-color: var(--colo2);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .7rem 2rem;
+    border-radius: .5rem;
+    transition: .2s ease-in-out;
+}
+
+.buton a:hover {
+    background-color: var(--colo3);
+}
+
+.inicio-img {
+    max-width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-img img {
+    width: 100%;
+    animation: float 2.5s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wave img {
+    width: 100vw;
+}
+
+.facilidades, .top, .colecao {
+    padding: 5rem 5%;
+}
+
+.facilidade, .facilidades-container, .facilidade-content, .facilidade-icon, .colecao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facilidades {
+    min-height: 20rem;
+}
+
+.facilidades-container {
+    justify-content: space-between;
+    width: 95vw;
+    height: 6.3rem;
+}
+
+.facilidade {
+    gap: 1rem;
+}
+
+.facilidade-icon {
+    font-size: 4rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 3.3rem;
+    border-radius: .5rem;
+    background-color: var(--colo2);
+    color: white;
+}
+
+.facilidade-content {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 6.3rem;
+}
+
+.facilidade-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.facilidade-content p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--colo3);
+}
+
+.top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 50rem;
+}
+
+.produtos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    transition: all .2s cubic-bezier(.34, 1.12, .68, 1.31);
+}
+
+.produto:hover {
+    transform: scale(1.1);
+}
+
+.produto:hover .produto-img {
+    box-shadow: 0 0 10px #b0d6f1;
+}
+
+.produto-img {
+    width: 20rem;
+    background-color: var(--colo1);
+    border-radius: .8rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.produto-img img {
+    width: 100%;
+    border-radius: .8rem;
+}
+
+.produto-desc h2 {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.colecao {
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.vermais a p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+    gap: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.vermais a p:hover {
+    color: var(--colo3);
+}
+
+.vermais p i {
+    font-size: 2rem;
+}
+
+.promocoes {
+    min-height: 40vh;
+    background-color: var(--colo1);
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    width: 60rem;
+    height: 20rem;
+    padding: 8rem 5rem;
+    background-color: white;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+}
+
+.cadastro p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.cadastro form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro form input {    
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: var(--colo1);
+    padding: 1.2rem;
+    width: 40rem;
+}
+
+#iemail {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#ienviar {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    font-weight: bold;
+    color: white;
+    background-color: var(--colo2);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 5%;
+}
+
+footer .logo i {
+    font-size: 10rem;
+}
+
+footer .listas {
+    display: flex;
+}
+
+footer .listas ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .listas ul li a {
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+footer .listas ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .listas ul li:nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+@media (max-width:1200px) {
+    html {
+       font-size: 55%; 
+    }
+    header, section {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width:992px) {
+    html {
+        font-size: 50%; 
+     }
+    .inicio-img img {
+        max-width: 90%; 
+     }
+    
+    .produtos-container {
+        width: 95vw;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 8rem 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    #navbarlateral i, header i {
+        cursor: pointer;
+    }
+    
+    #navbarlateral {
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        width: 0;
+        height: 100vh;
+        background-color: var(--colo1);
+        z-index: 100;
+        overflow: hidden;
+        box-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.377);
+        transition: .2s ease-in-out;
+    }
+    
+    #navbarlateral ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-self: end;
+        gap: 4rem;
+        width: 93%;
+        height: 100%;
+    }
+    
+    #navbarlateral ul li {
+        border: 2px solid var(--colo2);
+        border-right: none;
+        background-color: var(--colo5);
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        overflow: hidden;
+    }
+    
+    #navbarlateral ul li a {
+        display: flex;
+        justify-content: center;
+        color: var(--black);
+        font-size: 3.0rem;
+        padding: 1rem 50%;
+        font-weight: bold;
+        transition: .3s ease-in-out;
+    }
+    
+    #navbarlateral ul li:hover ,#navbarlateral ul li.ativo {
+        background-color: var(--colo2);
+    }
+
+    #navbarlateral ul li.ativo a {
+        color: white;
+    }
+    
+    #fecha {
+        display: flex;
+        justify-content: end;
+        padding: 1.2rem 3%;
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        width: 100%;
+        z-index: 101;
+        font-size: 3.6rem;
+        color: var(--black);
+    }
+
+    .flexxbox {
+        margin-top: 8rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #flexitem {
+        width: 47%;
+    }
+
+    #flexitem:nth-child(1) {
+        border-radius: .5rem;
+        border-right: 2px solid var(--colo2);
+    }
+
+    #flexitem i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: .3rem;
+    }
+
+    .inicio-content, .inicio-img {
+        max-width: 98vw; 
+    }
+
+    .inicio-content {
+        gap: .5rem;
+    }
+
+    .inicio-content h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .buton {
+        margin-top: 1rem;
+    }
+
+    .facilidade-content h2 {
+        font-size: 2rem;
+    }    
+}
+
+@media (max-width:580px) {
+    .facilidade {
+        flex-direction: column;  
+    }
+
+    .facilidade-content {
+        align-items: center;
+    }
+
+    .facilidade-icon {
+        padding: 3rem;
+    }
+    
+    .facilidade-content {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .facilidade-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .facilidade-content p {
+        display: none;
+    }
+
+    .top {
+        gap: 3rem;
+    }
+
+    .produtos-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .produto-img {
+        width: 55vw;
+    }
+
+    .cadastro {
+        width: 90vw;
+    }
+
+    .cadastro form input {
+        width: 70vw;
+    }
+
+    footer .logo i {
+        font-size: 8rem;
+    }
+}

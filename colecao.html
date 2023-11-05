@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="cloud.css">
+    <link rel="shortcut icon" href="img/FiveIcon.png" type="image/x-icon">
+</head>
+<style>
+    :root {
+        --colo1: #cfe1ef;
+        --colo2: #6371F2;
+        --colo3: #747474;
+        --colo4: #AAABAC;
+        --colo5: #E8E8E8;
+        --black: #333333;
+        background-image: linear-gradient(to right #717DED, #9BA1E0, #9EA5DF);
+    }
+
+    #back a {
+        font-size: 2.5rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: var(--black);
+    }
+
+    .icons1 {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .icons1 a {
+        font-size: 2rem;
+        color: var(--black);
+        transition: .2s ease-in-out;
+    }
+
+    .icons1 a:hover {
+        transform: scale(1.4);
+        color: var(--colo4);
+    }
+
+    .colecao-page .controles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2.0rem 0;
+        list-style: none;
+    }
+
+    .colecao-page .controles .botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.5rem;
+        width: 12rem;
+        background-color: var(--colo1);
+        color: var(--colo4);
+        font-size: 1.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 2.0rem;
+        border-radius: .5rem;
+        box-shadow: .4rem .4rem 0 rgba(0, 0, 0, 0.452);
+        text-align: center;
+    }
+
+    .colecao-page .controles .botao.active {
+        background-color: var(--colo4);
+        color: white;
+    }
+
+    .colecao-page .controles .botao:hover {
+        background-color: var(--colo3);
+    }
+
+    .colecao-page {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 8rem 8%;
+    }
+
+    .colecao-page .colecao-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    @media (max-width:580px) {
+        .colecao-page {
+            padding: 5rem 5%;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="icons1" id="back"><a href="cloud.html"><i class='bx bx-left-arrow-alt'></i></a></div>
+        <h1>Nossa Coleção</h1>
+        <div class="icons1">
+            <a href=""><i class='bx bxs-user'></i></a>
+            <a href="cart.html"><i class='bx bxs-cart-alt'></i></a>
+        </div>
+    </header>
+    <div class="colecao-page">
+        <ul class="controles">
+            <li class="botao active" data-filter="todos">Todos</li>
+            <li class="botao" data-filter="jordan">Jordan</li>
+            <li class="botao" data-filter="nike">Nike</li>
+            <li class="botao" data-filter="outros">Outros</li>
+        </ul>
+        <div class="colecao-container">
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan1-1.webp" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>AIR JORDAN 6 RETRO</h2>
+                        <h2>R$1.099,99</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan2-1.png" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>Off-White x Air Jordan 4</h2>
+                        <h2>R$18.000,00</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto nike">
+                    <div class="produto-img"><img src="img/nike1-4.png" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>NIKE AIR MAX 2021 SE</h2>
+                        <h2>R$799,99</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan1-2.jfif" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>AIR JORDAN 6 RETRO</h2>
+                        <h2>R$1.099,99</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan2-2.png" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>AIR JORDAN 4 FROZEN</h2>
+                        <h2>R$2.799,90</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto nike">
+                    <div class="produto-img"><img src="img/nike1-1.webp" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>NIKE REVOLUTION 6 </h2>
+                        <h2>R$297,99</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto nike">
+                    <div class="produto-img"><img src="img/nike1-5.png" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>NIKE AIR ZOOM</h2>
+                        <h2>R$699,90</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan-2-4.jpeg" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>AIR JORDAN 4 BLUE</h2>
+                        <h2>R$1.399,90</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto nike">
+                    <div class="produto-img"><img src="img/nike1-3.png" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>NIKE AIR ZOOM ALPHAFLY</h2>
+                        <h2>R$1.583,99</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan1-3.webp" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>AIR JORDAN 6 CACTUS JACK</h2>
+                        <h2>R$3.099,99</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto jordan">
+                    <div class="produto-img"><img src="img/jordan-2-3.webp" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>AIR JORDAN 4 INFRARED</h2>
+                        <h2>R$2.199,00</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="produto nike">
+                    <div class="produto-img"><img src="img/nike1-6.png" alt=""></div>
+                    <div class="produto-desc">
+                        <h2>NIKE ZOOM FLY 5</h2>
+                        <h2>R$1.299,99</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.botao').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                var filter = $(this).attr('data-filter')
+                if (filter == 'todos') {
+                    $('.produto').show(400);
+                } else {
+                    $('.produto').not('.' + filter).hide(200);
+                    $('.produto').filter('.' + filter).show(400);
+                }
+            });
+            $('.colecao-page').magnificPopup({
+                delegate: 'a',
+                type: 'produto',
+                galeria: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
