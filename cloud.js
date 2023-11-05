@@ -18,3 +18,15 @@ function openMenu() {
 function fecharMenu() {
     document.getElementById('navbarlateral').style.width = '0';
 }
+
+function abrir() {
+    document.getElementById('imenssagem').style.display = 'flex';
+}
+
+function fechar() {
+    document.getElementById('imenssagem').style.display = 'none';
+}
+
+
+
+

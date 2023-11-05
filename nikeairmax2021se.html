@@ -43,7 +43,8 @@
                 <li class="item-menu"><a href="#sobre">Sobre</a></li>
                 <div class="flexbox">
                     <li class="item-menu" id="flexitem"><a href=""><i class='bx bxs-user'></i>Usuario</a></li>
-                    <li class="item-menu" id="flexitem"><a href="cart.html"><i class='bx bxs-cart-alt'></i>Carrinho</a></li>
+                    <li class="item-menu" id="flexitem"><a href="cart.html"><i class='bx bxs-cart-alt'></i>Carrinho</a>
+                    </li>
                 </div>
             </ul>
         </div>
@@ -57,7 +58,10 @@
                 <div class="descricao">
                     <h3>NIKE</h3>
                     <h1>NIKE AIR MAX 2021 SE</h1>
-                    <p>Feita Com Pelo Menos 20% De Materiais Reciclados Por Peso, A Parte De Cima Inclui Uma Tela Estruturada, Tecido Woven E Camadas Sem Costura Para Um Estilo Elegante, Durável, Leve E Arejado. A Entressola De Espuma Tem Bolhas De Ar (Como Um Favo De Mel) E É Dividida Em Duas Seções Para Um Amortecimento Leve Que Dura.</p>
+                    <p>Feita Com Pelo Menos 20% De Materiais Reciclados Por Peso, A Parte De Cima Inclui Uma Tela
+                        Estruturada, Tecido Woven E Camadas Sem Costura Para Um Estilo Elegante, Durável, Leve E
+                        Arejado. A Entressola De Espuma Tem Bolhas De Ar (Como Um Favo De Mel) E É Dividida Em Duas
+                        Seções Para Um Amortecimento Leve Que Dura.</p>
                     <div class="line"></div>
                 </div>
                 <div class="descricao price">
@@ -100,9 +104,17 @@
                             <div class="tamanho">45</div>
                         </label>
                     </div>
+                    <div class="menssagem" id="imenssagem">
+                        <div class="menssagem-container">
+                            <div class="close" onclick="fechar()"><i class='bx bx-x'></i></div>
+                            <h2>Produto adicionado ao carrinho</h2>
+                            <i class="bi bi-cart-check-fill"></i>
+                            <a href="cart.html" class="enviar" id="ver">VER NO CARRINHO</a>
+                        </div>
+                    </div>
                     <div class="qtn-add">
                         <input type="number" name="qtn" id="iqtn" value="1">
-                        <button class="enviar">ADD AO CARRINHO</button>
+                        <div class="enviar" onclick="abrir()">ADD AO CARRINHO</div>
                     </div>
                 </form>
             </div>

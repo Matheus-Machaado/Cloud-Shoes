@@ -359,10 +359,65 @@ form {
     color: white;
     background-color: var(--colo2);
     transition: .2s ease-in-out;
+    cursor: pointer;
 }
 
 .enviar:hover {
     background-color: var(--colo3); 
+}
+
+.menssagem {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(114, 114, 114, 0.185);
+    z-index: 2;
+}
+
+.menssagem-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cfe1ef;
+    color: var(--black);
+    width: 35.0rem;
+    height: 25.0rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    padding: 1rem;
+}
+
+.menssagem-container h2 {
+    font-weight: bolder;
+}
+
+.menssagem-container i {
+    font-size: 6rem;
+}
+
+#ver {
+    padding: .8rem 2rem;
+    margin-top: 1rem;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.close i {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 @media (max-width:1200px) {
@@ -403,6 +458,11 @@ form {
 
     .main02 {
         padding-bottom: 4rem;
+        position: relative;
+    }
+
+    .menssagem{
+        height: 100%;
     }
 }
 
